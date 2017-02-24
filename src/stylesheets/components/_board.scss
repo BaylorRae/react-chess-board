@@ -1,6 +1,24 @@
+$square-size: 80px;
+$square-count: 8;
+$square-white: #fefff4;
+$square-black: #49796b;
+
+$board-size: $square-size * $square-count;
+
 .board {
-  width: 600px;
-  height: 600px;
-  background-color: #eee;
+  width: $board-size;
+  height: $board-size;
+  background-color: $square-white;
+  background-image: linear-gradient(45deg, $square-black 25%, transparent 25%, transparent 75%, $square-black 75%, $square-black),
+                    linear-gradient(45deg, $square-black 25%, transparent 25%, transparent 75%, $square-black 75%, $square-black);
+  background-size: $square-size * 2;
+  background-position: 0 0, $square-size $square-size;
   margin: 10px auto;
+  position: relative;
+
+  .square {
+    width: $square-size;
+    height: $square-size;
+    position: absolute;
+  }
 }

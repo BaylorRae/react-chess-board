@@ -1,5 +1,13 @@
 .board {
-  width: 600px;
-  height: 600px;
-  background-color: #eee;
-  margin: 10px auto; }
+  width: 640px;
+  height: 640px;
+  background-color: #fefff4;
+  background-image: linear-gradient(45deg, #49796b 25%, transparent 25%, transparent 75%, #49796b 75%, #49796b), linear-gradient(45deg, #49796b 25%, transparent 25%, transparent 75%, #49796b 75%, #49796b);
+  background-size: 160px;
+  background-position: 0 0, 80px 80px;
+  margin: 10px auto;
+  position: relative; }
+  .board .square {
+    width: 80px;
+    height: 80px;
+    position: absolute; }
