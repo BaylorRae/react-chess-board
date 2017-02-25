@@ -1,0 +1,11 @@
+$coordinates: a b c d e f g h;
+
+@for $i from 1 through $square-count {
+  @each $coordinate in $coordinates {
+    $offset: index($coordinates, $coordinate) - 1;
+
+    .#{$coordinate}#{$i} {
+      transform: translate($offset * $square-size, ($square-count - ($i)) * $square-size);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.piece {
+  width: $square-size;
+  height: $square-size;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+
+  &.pawn.white {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg');
+  }
+}

@@ -1,3 +1,195 @@
+.a1 {
+  transform: translate(0px, 560px); }
+
+.b1 {
+  transform: translate(80px, 560px); }
+
+.c1 {
+  transform: translate(160px, 560px); }
+
+.d1 {
+  transform: translate(240px, 560px); }
+
+.e1 {
+  transform: translate(320px, 560px); }
+
+.f1 {
+  transform: translate(400px, 560px); }
+
+.g1 {
+  transform: translate(480px, 560px); }
+
+.h1 {
+  transform: translate(560px, 560px); }
+
+.a2 {
+  transform: translate(0px, 480px); }
+
+.b2 {
+  transform: translate(80px, 480px); }
+
+.c2 {
+  transform: translate(160px, 480px); }
+
+.d2 {
+  transform: translate(240px, 480px); }
+
+.e2 {
+  transform: translate(320px, 480px); }
+
+.f2 {
+  transform: translate(400px, 480px); }
+
+.g2 {
+  transform: translate(480px, 480px); }
+
+.h2 {
+  transform: translate(560px, 480px); }
+
+.a3 {
+  transform: translate(0px, 400px); }
+
+.b3 {
+  transform: translate(80px, 400px); }
+
+.c3 {
+  transform: translate(160px, 400px); }
+
+.d3 {
+  transform: translate(240px, 400px); }
+
+.e3 {
+  transform: translate(320px, 400px); }
+
+.f3 {
+  transform: translate(400px, 400px); }
+
+.g3 {
+  transform: translate(480px, 400px); }
+
+.h3 {
+  transform: translate(560px, 400px); }
+
+.a4 {
+  transform: translate(0px, 320px); }
+
+.b4 {
+  transform: translate(80px, 320px); }
+
+.c4 {
+  transform: translate(160px, 320px); }
+
+.d4 {
+  transform: translate(240px, 320px); }
+
+.e4 {
+  transform: translate(320px, 320px); }
+
+.f4 {
+  transform: translate(400px, 320px); }
+
+.g4 {
+  transform: translate(480px, 320px); }
+
+.h4 {
+  transform: translate(560px, 320px); }
+
+.a5 {
+  transform: translate(0px, 240px); }
+
+.b5 {
+  transform: translate(80px, 240px); }
+
+.c5 {
+  transform: translate(160px, 240px); }
+
+.d5 {
+  transform: translate(240px, 240px); }
+
+.e5 {
+  transform: translate(320px, 240px); }
+
+.f5 {
+  transform: translate(400px, 240px); }
+
+.g5 {
+  transform: translate(480px, 240px); }
+
+.h5 {
+  transform: translate(560px, 240px); }
+
+.a6 {
+  transform: translate(0px, 160px); }
+
+.b6 {
+  transform: translate(80px, 160px); }
+
+.c6 {
+  transform: translate(160px, 160px); }
+
+.d6 {
+  transform: translate(240px, 160px); }
+
+.e6 {
+  transform: translate(320px, 160px); }
+
+.f6 {
+  transform: translate(400px, 160px); }
+
+.g6 {
+  transform: translate(480px, 160px); }
+
+.h6 {
+  transform: translate(560px, 160px); }
+
+.a7 {
+  transform: translate(0px, 80px); }
+
+.b7 {
+  transform: translate(80px, 80px); }
+
+.c7 {
+  transform: translate(160px, 80px); }
+
+.d7 {
+  transform: translate(240px, 80px); }
+
+.e7 {
+  transform: translate(320px, 80px); }
+
+.f7 {
+  transform: translate(400px, 80px); }
+
+.g7 {
+  transform: translate(480px, 80px); }
+
+.h7 {
+  transform: translate(560px, 80px); }
+
+.a8 {
+  transform: translate(0px, 0px); }
+
+.b8 {
+  transform: translate(80px, 0px); }
+
+.c8 {
+  transform: translate(160px, 0px); }
+
+.d8 {
+  transform: translate(240px, 0px); }
+
+.e8 {
+  transform: translate(320px, 0px); }
+
+.f8 {
+  transform: translate(400px, 0px); }
+
+.g8 {
+  transform: translate(480px, 0px); }
+
+.h8 {
+  transform: translate(560px, 0px); }
+
 .board {
   width: 640px;
   height: 640px;
@@ -11,3 +203,12 @@
     width: 80px;
     height: 80px;
     position: absolute; }
+
+.piece {
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%; }
+  .piece.pawn.white {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg"); }

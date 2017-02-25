@@ -1,10 +1,3 @@
-$square-size: 80px;
-$square-count: 8;
-$square-white: #fefff4;
-$square-black: #49796b;
-
-$board-size: $square-size * $square-count;
-
 .board {
   width: $board-size;
   height: $board-size;
