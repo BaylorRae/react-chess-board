@@ -219,7 +219,8 @@
 .legal-square {
   width: 80px;
   height: 80px;
-  position: absolute; }
+  position: absolute;
+  z-index: 10; }
   .legal-square:after {
     content: '';
     width: 26.66667px;

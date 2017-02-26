@@ -4,6 +4,7 @@ $legal-square-size: $square-size / 3;
   width: $square-size;
   height: $square-size;
   position: absolute;
+  z-index: 10;
 
   &:after {
     content: '';

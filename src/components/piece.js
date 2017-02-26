@@ -10,6 +10,14 @@ class Piece extends Component {
     }
   }
 
+  get color() {
+    return this.props.color == 'b' ? 'black' : 'white';
+  }
+
+  get type() {
+    return this.props.type == 'p' ? 'pawn' : this.props.type;
+  }
+
   get coordinates() {
     return this.state.coordinates;
   }
@@ -25,7 +33,7 @@ class Piece extends Component {
   }
 
   render() {
-    let classNames = "piece " + this.props.color + " " + this.props.type + " " + this.state.coordinates;
+    let classNames = "piece " + this.color + " " + this.type + " " + this.coordinates;
     return (
       <div onClick={this.clicked} className={classNames} />
     );

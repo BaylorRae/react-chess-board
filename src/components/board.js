@@ -13,28 +13,27 @@ class Board extends Component {
 
     this.state = {
       activePiece: null,
+      pieces: [],
       legalSquares: []
     }
   }
 
   componentDidMount() {
     this.chess = new Chess();
+    this._loadBoardPosition();
   }
 
   render() {
-    let whitePawns = [],
-        blackPawns = [];
-
-    ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'].forEach((v, i) => {
-      blackPawns.push(v + '7');
-      whitePawns.push(v + '2');
-    });
+    const pieces = this.state.pieces.map(piece => {
+      return (
+        <Piece key={piece.coordinates + piece.color + piece.type} onClick={this.clickedPiece} type={piece.type} color={piece.color} coordinates={piece.coordinates} />
+      );
+    })
 
     return (
       <div className="board">
         {this.state.legalSquares.map(c => <LegalSquare onClick={this.clickedLegalSquare} key={c} coordinates={c} />)}
-        {whitePawns.map(c => <Piece onClick={this.clickedPiece} key={c} type="pawn" color="white" coordinates={c} />)}
-        {blackPawns.map(c => <Piece onClick={this.clickedPiece} key={c} type="pawn" color="black" coordinates={c} />)}
+        {pieces}
       </div>
     );
   }
@@ -47,11 +46,28 @@ class Board extends Component {
   }
 
   clickedLegalSquare(e, square) {
-    this.state.activePiece.coordinates = square.coordinates;
-    this.chess.move(square.coordinates);
+    this.chess.move(square.coordinates, { sloppy: true });
     this.setState({
       activePiece: null,
       legalSquares: []
+    });
+    this._loadBoardPosition();
+  }
+
+  _loadBoardPosition() {
+    this.setState({
+      pieces: this.chess.SQUARES.map(s => {
+        let piece = this.chess.get(s);
+
+        if (piece == null)
+          return null;
+
+        return {
+          coordinates: s,
+          type: piece.type,
+          color: piece.color
+        }
+      }).filter(v => v != null)
     });
   }
 }
