@@ -1,0 +1,19 @@
+$legal-square-size: $square-size / 3;
+
+.legal-square {
+  width: $square-size;
+  height: $square-size;
+  position: absolute;
+
+  &:after {
+    content: '';
+    width: $legal-square-size;
+    height: $legal-square-size;
+    position: absolute;
+    background: rgba(black, 0.2);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(($legal-square-size / 2) * -1, ($legal-square-size / 2) * -1);
+  }
+}

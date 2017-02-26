@@ -4,7 +4,7 @@ $coordinates: a b c d e f g h;
   @each $coordinate in $coordinates {
     $offset: index($coordinates, $coordinate) - 1;
 
-    .#{$coordinate}#{$i} {
+    [class*="#{$coordinate}#{$i}"] {
       transform: translate($offset * $square-size, ($square-count - ($i)) * $square-size);
     }
   }

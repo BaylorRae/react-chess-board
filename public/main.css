@@ -1,193 +1,193 @@
-.a1 {
+[class*="a1"] {
   transform: translate(0px, 560px); }
 
-.b1 {
+[class*="b1"] {
   transform: translate(80px, 560px); }
 
-.c1 {
+[class*="c1"] {
   transform: translate(160px, 560px); }
 
-.d1 {
+[class*="d1"] {
   transform: translate(240px, 560px); }
 
-.e1 {
+[class*="e1"] {
   transform: translate(320px, 560px); }
 
-.f1 {
+[class*="f1"] {
   transform: translate(400px, 560px); }
 
-.g1 {
+[class*="g1"] {
   transform: translate(480px, 560px); }
 
-.h1 {
+[class*="h1"] {
   transform: translate(560px, 560px); }
 
-.a2 {
+[class*="a2"] {
   transform: translate(0px, 480px); }
 
-.b2 {
+[class*="b2"] {
   transform: translate(80px, 480px); }
 
-.c2 {
+[class*="c2"] {
   transform: translate(160px, 480px); }
 
-.d2 {
+[class*="d2"] {
   transform: translate(240px, 480px); }
 
-.e2 {
+[class*="e2"] {
   transform: translate(320px, 480px); }
 
-.f2 {
+[class*="f2"] {
   transform: translate(400px, 480px); }
 
-.g2 {
+[class*="g2"] {
   transform: translate(480px, 480px); }
 
-.h2 {
+[class*="h2"] {
   transform: translate(560px, 480px); }
 
-.a3 {
+[class*="a3"] {
   transform: translate(0px, 400px); }
 
-.b3 {
+[class*="b3"] {
   transform: translate(80px, 400px); }
 
-.c3 {
+[class*="c3"] {
   transform: translate(160px, 400px); }
 
-.d3 {
+[class*="d3"] {
   transform: translate(240px, 400px); }
 
-.e3 {
+[class*="e3"] {
   transform: translate(320px, 400px); }
 
-.f3 {
+[class*="f3"] {
   transform: translate(400px, 400px); }
 
-.g3 {
+[class*="g3"] {
   transform: translate(480px, 400px); }
 
-.h3 {
+[class*="h3"] {
   transform: translate(560px, 400px); }
 
-.a4 {
+[class*="a4"] {
   transform: translate(0px, 320px); }
 
-.b4 {
+[class*="b4"] {
   transform: translate(80px, 320px); }
 
-.c4 {
+[class*="c4"] {
   transform: translate(160px, 320px); }
 
-.d4 {
+[class*="d4"] {
   transform: translate(240px, 320px); }
 
-.e4 {
+[class*="e4"] {
   transform: translate(320px, 320px); }
 
-.f4 {
+[class*="f4"] {
   transform: translate(400px, 320px); }
 
-.g4 {
+[class*="g4"] {
   transform: translate(480px, 320px); }
 
-.h4 {
+[class*="h4"] {
   transform: translate(560px, 320px); }
 
-.a5 {
+[class*="a5"] {
   transform: translate(0px, 240px); }
 
-.b5 {
+[class*="b5"] {
   transform: translate(80px, 240px); }
 
-.c5 {
+[class*="c5"] {
   transform: translate(160px, 240px); }
 
-.d5 {
+[class*="d5"] {
   transform: translate(240px, 240px); }
 
-.e5 {
+[class*="e5"] {
   transform: translate(320px, 240px); }
 
-.f5 {
+[class*="f5"] {
   transform: translate(400px, 240px); }
 
-.g5 {
+[class*="g5"] {
   transform: translate(480px, 240px); }
 
-.h5 {
+[class*="h5"] {
   transform: translate(560px, 240px); }
 
-.a6 {
+[class*="a6"] {
   transform: translate(0px, 160px); }
 
-.b6 {
+[class*="b6"] {
   transform: translate(80px, 160px); }
 
-.c6 {
+[class*="c6"] {
   transform: translate(160px, 160px); }
 
-.d6 {
+[class*="d6"] {
   transform: translate(240px, 160px); }
 
-.e6 {
+[class*="e6"] {
   transform: translate(320px, 160px); }
 
-.f6 {
+[class*="f6"] {
   transform: translate(400px, 160px); }
 
-.g6 {
+[class*="g6"] {
   transform: translate(480px, 160px); }
 
-.h6 {
+[class*="h6"] {
   transform: translate(560px, 160px); }
 
-.a7 {
+[class*="a7"] {
   transform: translate(0px, 80px); }
 
-.b7 {
+[class*="b7"] {
   transform: translate(80px, 80px); }
 
-.c7 {
+[class*="c7"] {
   transform: translate(160px, 80px); }
 
-.d7 {
+[class*="d7"] {
   transform: translate(240px, 80px); }
 
-.e7 {
+[class*="e7"] {
   transform: translate(320px, 80px); }
 
-.f7 {
+[class*="f7"] {
   transform: translate(400px, 80px); }
 
-.g7 {
+[class*="g7"] {
   transform: translate(480px, 80px); }
 
-.h7 {
+[class*="h7"] {
   transform: translate(560px, 80px); }
 
-.a8 {
+[class*="a8"] {
   transform: translate(0px, 0px); }
 
-.b8 {
+[class*="b8"] {
   transform: translate(80px, 0px); }
 
-.c8 {
+[class*="c8"] {
   transform: translate(160px, 0px); }
 
-.d8 {
+[class*="d8"] {
   transform: translate(240px, 0px); }
 
-.e8 {
+[class*="e8"] {
   transform: translate(320px, 0px); }
 
-.f8 {
+[class*="f8"] {
   transform: translate(400px, 0px); }
 
-.g8 {
+[class*="g8"] {
   transform: translate(480px, 0px); }
 
-.h8 {
+[class*="h8"] {
   transform: translate(560px, 0px); }
 
 .board {
@@ -215,3 +215,18 @@
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg"); }
   .piece.pawn.black {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg"); }
+
+.legal-square {
+  width: 80px;
+  height: 80px;
+  position: absolute; }
+  .legal-square:after {
+    content: '';
+    width: 26.66667px;
+    height: 26.66667px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-13.33333px, -13.33333px); }
