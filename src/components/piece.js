@@ -15,7 +15,12 @@ class Piece extends Component {
   }
 
   get type() {
-    return this.props.type == 'p' ? 'pawn' : this.props.type;
+    return this.props.type == 'p' ? 'pawn' :
+           this.props.type == 'r' ? 'rook' :
+           this.props.type == 'n' ? 'knight' :
+           this.props.type == 'b' ? 'bishop' :
+           this.props.type == 'q' ? 'queen' :
+           this.props.type == 'k' ? 'king' : this.props.type;
   }
 
   get coordinates() {
