@@ -1,0 +1,253 @@
+[class*="a1"] {
+  transform: translate(0px, 560px); }
+
+[class*="b1"] {
+  transform: translate(80px, 560px); }
+
+[class*="c1"] {
+  transform: translate(160px, 560px); }
+
+[class*="d1"] {
+  transform: translate(240px, 560px); }
+
+[class*="e1"] {
+  transform: translate(320px, 560px); }
+
+[class*="f1"] {
+  transform: translate(400px, 560px); }
+
+[class*="g1"] {
+  transform: translate(480px, 560px); }
+
+[class*="h1"] {
+  transform: translate(560px, 560px); }
+
+[class*="a2"] {
+  transform: translate(0px, 480px); }
+
+[class*="b2"] {
+  transform: translate(80px, 480px); }
+
+[class*="c2"] {
+  transform: translate(160px, 480px); }
+
+[class*="d2"] {
+  transform: translate(240px, 480px); }
+
+[class*="e2"] {
+  transform: translate(320px, 480px); }
+
+[class*="f2"] {
+  transform: translate(400px, 480px); }
+
+[class*="g2"] {
+  transform: translate(480px, 480px); }
+
+[class*="h2"] {
+  transform: translate(560px, 480px); }
+
+[class*="a3"] {
+  transform: translate(0px, 400px); }
+
+[class*="b3"] {
+  transform: translate(80px, 400px); }
+
+[class*="c3"] {
+  transform: translate(160px, 400px); }
+
+[class*="d3"] {
+  transform: translate(240px, 400px); }
+
+[class*="e3"] {
+  transform: translate(320px, 400px); }
+
+[class*="f3"] {
+  transform: translate(400px, 400px); }
+
+[class*="g3"] {
+  transform: translate(480px, 400px); }
+
+[class*="h3"] {
+  transform: translate(560px, 400px); }
+
+[class*="a4"] {
+  transform: translate(0px, 320px); }
+
+[class*="b4"] {
+  transform: translate(80px, 320px); }
+
+[class*="c4"] {
+  transform: translate(160px, 320px); }
+
+[class*="d4"] {
+  transform: translate(240px, 320px); }
+
+[class*="e4"] {
+  transform: translate(320px, 320px); }
+
+[class*="f4"] {
+  transform: translate(400px, 320px); }
+
+[class*="g4"] {
+  transform: translate(480px, 320px); }
+
+[class*="h4"] {
+  transform: translate(560px, 320px); }
+
+[class*="a5"] {
+  transform: translate(0px, 240px); }
+
+[class*="b5"] {
+  transform: translate(80px, 240px); }
+
+[class*="c5"] {
+  transform: translate(160px, 240px); }
+
+[class*="d5"] {
+  transform: translate(240px, 240px); }
+
+[class*="e5"] {
+  transform: translate(320px, 240px); }
+
+[class*="f5"] {
+  transform: translate(400px, 240px); }
+
+[class*="g5"] {
+  transform: translate(480px, 240px); }
+
+[class*="h5"] {
+  transform: translate(560px, 240px); }
+
+[class*="a6"] {
+  transform: translate(0px, 160px); }
+
+[class*="b6"] {
+  transform: translate(80px, 160px); }
+
+[class*="c6"] {
+  transform: translate(160px, 160px); }
+
+[class*="d6"] {
+  transform: translate(240px, 160px); }
+
+[class*="e6"] {
+  transform: translate(320px, 160px); }
+
+[class*="f6"] {
+  transform: translate(400px, 160px); }
+
+[class*="g6"] {
+  transform: translate(480px, 160px); }
+
+[class*="h6"] {
+  transform: translate(560px, 160px); }
+
+[class*="a7"] {
+  transform: translate(0px, 80px); }
+
+[class*="b7"] {
+  transform: translate(80px, 80px); }
+
+[class*="c7"] {
+  transform: translate(160px, 80px); }
+
+[class*="d7"] {
+  transform: translate(240px, 80px); }
+
+[class*="e7"] {
+  transform: translate(320px, 80px); }
+
+[class*="f7"] {
+  transform: translate(400px, 80px); }
+
+[class*="g7"] {
+  transform: translate(480px, 80px); }
+
+[class*="h7"] {
+  transform: translate(560px, 80px); }
+
+[class*="a8"] {
+  transform: translate(0px, 0px); }
+
+[class*="b8"] {
+  transform: translate(80px, 0px); }
+
+[class*="c8"] {
+  transform: translate(160px, 0px); }
+
+[class*="d8"] {
+  transform: translate(240px, 0px); }
+
+[class*="e8"] {
+  transform: translate(320px, 0px); }
+
+[class*="f8"] {
+  transform: translate(400px, 0px); }
+
+[class*="g8"] {
+  transform: translate(480px, 0px); }
+
+[class*="h8"] {
+  transform: translate(560px, 0px); }
+
+.board {
+  width: 640px;
+  height: 640px;
+  background-color: #fefff4;
+  background-image: linear-gradient(45deg, #49796b 25%, transparent 25%, transparent 75%, #49796b 75%, #49796b), linear-gradient(45deg, #49796b 25%, transparent 25%, transparent 75%, #49796b 75%, #49796b);
+  background-size: 160px;
+  background-position: 0 0, 80px 80px;
+  margin: 10px auto;
+  position: relative; }
+  .board .square {
+    width: 80px;
+    height: 80px;
+    position: absolute; }
+
+.piece {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%; }
+  .piece.pawn.white {
+    background-image: url("/pieces/pawn-white.svg"); }
+  .piece.pawn.black {
+    background-image: url("/pieces/pawn-black.svg"); }
+  .piece.rook.white {
+    background-image: url("/pieces/rook-white.svg"); }
+  .piece.rook.black {
+    background-image: url("/pieces/rook-black.svg"); }
+  .piece.knight.white {
+    background-image: url("/pieces/knight-white.svg"); }
+  .piece.knight.black {
+    background-image: url("/pieces/knight-black.svg"); }
+  .piece.bishop.white {
+    background-image: url("/pieces/bishop-white.svg"); }
+  .piece.bishop.black {
+    background-image: url("/pieces/bishop-black.svg"); }
+  .piece.queen.white {
+    background-image: url("/pieces/queen-white.svg"); }
+  .piece.queen.black {
+    background-image: url("/pieces/queen-black.svg"); }
+  .piece.king.white {
+    background-image: url("/pieces/king-white.svg"); }
+  .piece.king.black {
+    background-image: url("/pieces/king-black.svg"); }
+
+.legal-square {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 10; }
+  .legal-square:after {
+    content: '';
+    width: 26.66667px;
+    height: 26.66667px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-13.33333px, -13.33333px); }
