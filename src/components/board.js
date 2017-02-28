@@ -26,7 +26,7 @@ class Board extends Component {
   render() {
     const pieces = this.state.pieces.map(piece => {
       return (
-        <Piece key={piece.coordinates + piece.color + piece.type} onClick={this.clickedPiece} type={piece.type} color={piece.color} coordinates={piece.coordinates} />
+        <Piece ref={c => piece.component = c} key={piece.coordinates + piece.color + piece.type} onClick={this.clickedPiece} type={piece.type} color={piece.color} coordinates={piece.coordinates} />
       );
     })
 
@@ -46,12 +46,20 @@ class Board extends Component {
   }
 
   clickedLegalSquare(e, square) {
-    this.chess.move(square.coordinates, { sloppy: true });
+    var move = this.chess.move(square.coordinates, { sloppy: true });
+
+    this.state.activePiece.coordinates = move.to;
+
+    if( move.captured ) {
+      this._removeCapturedPiece(move.to);
+    }
+
     this.setState({
       activePiece: null,
       legalSquares: []
     });
-    this._loadBoardPosition();
+
+    setTimeout(() => this._loadBoardPosition(), 200);
   }
 
   _loadBoardPosition() {
@@ -59,7 +67,7 @@ class Board extends Component {
       pieces: this.chess.SQUARES.map(s => {
         let piece = this.chess.get(s);
 
-        if (piece == null)
+        if (piece === null)
           return null;
 
         return {
@@ -69,6 +77,13 @@ class Board extends Component {
         }
       }).filter(v => v != null)
     });
+  }
+
+  _removeCapturedPiece(coordinates) {
+    const capturedPiece = this.state.pieces.find(p => p.component.coordinates === coordinates);
+
+    if( capturedPiece )
+      capturedPiece.coordinates += " captured";
   }
 }
 
