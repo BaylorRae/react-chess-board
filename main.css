@@ -210,7 +210,10 @@
   position: absolute;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 75%; }
+  background-size: 75%;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out; }
+  .piece.captured {
+    opacity: 0; }
   .piece.pawn.white {
     background-image: url("pieces/pawn-white.svg"); }
   .piece.pawn.black {
