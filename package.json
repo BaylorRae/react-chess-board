@@ -13,8 +13,8 @@
     "react-dom": "^15.4.2"
   },
   "scripts": {
-    "build-css": "node-sass src/stylesheets/main.scss public/main.css",
-    "watch-css": "npm run build-css && node-sass --watch src/stylesheets -o public",
+    "build-css": "node-sass src/stylesheets/main.scss src/main.css",
+    "watch-css": "npm run build-css && node-sass --watch src/stylesheets -o src",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",

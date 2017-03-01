@@ -14,11 +14,11 @@
 
   @each $piece in pawn rook knight bishop queen king {
     &.#{$piece}.white {
-      background-image: url('pieces/#{$piece}-white.svg');
+      background-image: url('/pieces/#{$piece}-white.svg');
     }
 
     &.#{$piece}.black {
-      background-image: url('pieces/#{$piece}-black.svg');
+      background-image: url('/pieces/#{$piece}-black.svg');
     }
   }
 }

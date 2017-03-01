@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Board from './components/board';
 
-import './App.css';
+import './main.css';
 
 class App extends Component {
   render() {
