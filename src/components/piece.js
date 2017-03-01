@@ -5,6 +5,7 @@ class Piece extends Component {
     super(props);
 
     this.clicked = this.clicked.bind(this);
+
     this.state = {
       coordinates: props.coordinates
     }
@@ -40,7 +41,7 @@ class Piece extends Component {
   render() {
     let classNames = "piece " + this.color + " " + this.type + " " + this.coordinates;
     return (
-      <div onClick={this.clicked} className={classNames} />
+      <div onClick={this.clicked} className={classNames} onTransitionEnd={this.props.transitionEnd} />
     );
   }
 }

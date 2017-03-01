@@ -10,6 +10,7 @@ class Board extends Component {
 
     this.clickedPiece = this.clickedPiece.bind(this);
     this.clickedLegalSquare = this.clickedLegalSquare.bind(this);
+    this._loadBoardPosition = this._loadBoardPosition.bind(this);
 
     this.state = {
       activePiece: null,
@@ -26,7 +27,7 @@ class Board extends Component {
   render() {
     const pieces = this.state.pieces.map(piece => {
       return (
-        <Piece ref={c => piece.component = c} key={piece.coordinates + piece.color + piece.type} onClick={this.clickedPiece} type={piece.type} color={piece.color} coordinates={piece.coordinates} />
+        <Piece ref={c => piece.component = c} key={piece.coordinates + piece.color + piece.type} onClick={this.clickedPiece} type={piece.type} color={piece.color} coordinates={piece.coordinates} transitionEnd={this._loadBoardPosition} />
       );
     })
 
@@ -58,8 +59,6 @@ class Board extends Component {
       activePiece: null,
       legalSquares: []
     });
-
-    setTimeout(() => this._loadBoardPosition(), 200);
   }
 
   _loadBoardPosition() {
